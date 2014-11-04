@@ -1,5 +1,6 @@
 StatusManager::Application.routes.draw do
   
+  devise_for :members
   mount RailsAdmin::Engine => '/status-manager-admin', as: 'rails_admin'
   root 'home#index'
 
